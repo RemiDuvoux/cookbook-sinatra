@@ -52,7 +52,7 @@ end
 
 post '/delete_recipe' do
   @recipes = Cookbook.new(CSV_file)
-  @recipes.remove_recipe(params[:recipe_id])
+  @recipes.remove_recipe(params[:recipe_idw])
   erb :index
 
   get '/import' do
